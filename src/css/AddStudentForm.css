@@ -1,0 +1,67 @@
+.add-student-container {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInFromTop 0.6s forwards; /* אפקט של הופעה מלמעלה */
+    position: absolute; /* תמנע מהטופס להזיז את האלמנטים האחרים */
+   
+  }
+  
+  .student-test-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .student-name-div, .student-tz-div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .student-label {
+    font-size: 16px;
+    color: #003366; /* כחול כהה */
+    margin-bottom: 5px;
+  }
+  
+  .student-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .student-input:focus {
+    border-color: #ffcc00; /* צהוב */
+  }
+  
+  .student-submit-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #003366; /* כחול כהה */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .student-submit-btn:hover {
+    background-color: #ffcc00; /* צהוב */
+  }
+  
+  .student-submit-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .student-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  

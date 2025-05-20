@@ -1,0 +1,102 @@
+/* UserAddTestForm.css */
+
+/* צבעים */
+:root {
+    --yellow: #FFD700;
+    --blue: #f0f8ff;
+    --white: #f0f8ff;
+  }
+  
+  /* כללית לקומפוננטה */
+  .user-test-container {
+    background-color: var(--blue);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* התחל עם שקיפות */
+    animation: fadeInFromTop 0.6s forwards; /* אפקט של הופעה מלמעלה */
+    position: absolute; /* תמנע מהטופס להזיז את האלמנטים האחרים */
+   
+}
+  
+  /* אנימציה של הופעה מלמעלה */
+  @keyframes fadeInFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* התחלה עם זוזה מלמעלה */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* סיום במיקום הרגיל */
+    }
+  }
+  
+  /* סטייל למערכת הטופס */
+  .user-test-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .user-test-input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-test-label {
+    font-size: 1.1rem;
+    color: #003366;
+    margin-bottom: 8px;
+  }
+  
+  .user-test-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #003366;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .user-test-input:focus {
+    border-color: var(--blue);
+    background-color: #f0f8ff;
+  }
+  
+  /* כפתור */
+  .user-test-button {
+    padding: 10px;
+    background-color: #003366;
+    border: none;
+    color: var(--blue);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .user-test-button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  
+  .user-test-button:hover {
+    background-color: #FFD700;
+    transform: scale(1.1); /* הגדלה קלה של הכפתור */
+    opacity: 0.9; /* הבהרה קלה של הכפתור */
+  }
+  
+  /* הצגת הודעות */
+  .user-test-success {
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .user-test-error {
+    margin-top: 20px;
+    color: #dc3545;
+    font-weight: bold;
+  }

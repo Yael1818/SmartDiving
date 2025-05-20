@@ -1,0 +1,114 @@
+
+/* Student Add Test Form Container */
+.student-add-test-form-container {
+  background-color: #f0f8ff;
+  width: 80%;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeInFromTop 0.6s forwards;
+  /* אפקט של הופעה מלמעלה */
+  position: absolute;
+  /* תמנע מהטופס להזיז את האלמנטים האחרים */
+
+}
+
+
+/* Title */
+.student-add-test-form-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
+  /* Blue color */
+  margin-bottom: 20px;
+}
+
+/* Student Add Test Loading Text */
+.student-add-test-loading-text {
+  text-align: center;
+  color: #ffcc00;
+  /* Yellow color */
+}
+
+/* Student Add Test Section Title */
+.student-add-test-section-title {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* Student Add Test List */
+.student-add-test-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.student-add-test-item {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.student-add-test-checkbox {
+  margin-right: 10px;
+}
+
+/* Student Add Test Submit Button */
+.student-add-test-submit-button {
+  background-color: #ffcc00;
+  /* Yellow color */
+  color: #003366;
+  /* Blue color */
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.student-add-test-submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.student-add-test-submit-button:hover:not(:disabled) {
+  background-color: #ffb300;
+  /* Slightly darker yellow */
+
+}
+
+/* Student Add Test Error Message */
+.student-add-test-error-message {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .student-add-test-form-container {
+    padding: 15px;
+  }
+
+  .student-add-test-form-title {
+    font-size: 1.8rem;
+  }
+
+  .student-add-test-section-title {
+    font-size: 1.2rem;
+  }
+
+  .student-add-test-item {
+    font-size: 1rem;
+  }
+
+  .student-add-test-submit-button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}

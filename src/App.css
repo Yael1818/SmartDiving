@@ -1,0 +1,157 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366; /* Dark blue background */
+  padding: 15px 30px;
+  color: white;
+  position: fixed; /* גורם ל-header להיות קבוע */
+  top: 0; /* נשאר למעלה */
+  left: 0; /* נשאר בצד שמאל */
+  width: 100%; /* מתפשט לרוחב כל הדף */
+  z-index: 1000; /* כדי שה-header יעמוד מעל תוכן אחר */
+  
+}
+
+/* Logo styling */
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Navigation links styling */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Link styling */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00; /* Yellow color on hover */
+  text-decoration: underline;
+}
+
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* Footer styling */
+/* Make the entire page a flex container */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main container ensures content takes full height */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+/* Main content grows to push footer down */
+.main-content {
+  flex: 1;
+}
+
+/* Footer always at the bottom */
+/* הבסיס של כל העמוד */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* הקונטיינר הראשי */
+.app-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px; /* להשאיר מקום לפוטר */
+}
+
+
+
+/* הבסיס של כל העמוד */
+html, body, #root {
+  min-height: 350vh; /* יוצר מספיק גובה כדי לבדוק אם ניתן לגלול */
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* הקונטיינר הראשי */
+
+
+/* התוכן הראשי */
+.main-content {
+  flex: 1;
+  padding-bottom: 50px; /* משאיר מקום לפוטר */
+  margin-top: 130px;
+}
+
+/* הפוטר קבוע בתחתית הדף */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* גובה קטן יותר */
+  background-color: #003366; /* צבע רקע כהה */
+  color: white;
+  text-align: center;
+  line-height: 50px; /* ממרכז את הטקסט אנכית */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* הפוטר עם קישורים */
+.footer a {
+  color: #ffcc00; /* צבע צהוב */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
