@@ -8,24 +8,24 @@ import { Link } from 'react-router-dom';
 import './App.css';
 const App = () => {
   return (
-   
+
 
     <Router>
-       <header dir="rtl" className="header">
-   
-    <nav className="nav-links">
-      <Link to="/dataEntry">הכנסת נתונים</Link>
-      <Link to="/signup">הרשמה</Link>
-      <Link to="/login">התחברות</Link>
-    </nav>
-    <img src='src/assets/logo.jpg' alt="Logo" className="logo" />
-  </header>
+      <header dir="rtl" className="header">
+
+        <nav className="nav-links">
+          <Link to="/dataEntry">הכנסת נתונים</Link>
+          <Link to="/signup">הרשמה</Link>
+          <Link to="/login">התחברות</Link>
+        </nav>
+        <img src='src/assets/logo.jpg' alt="Logo" className="logo" />
+      </header>
       <Routes>
-        <Route path="/" element={<Home />} /> {/* דף ברירת המחדל */}
-        <Route path="/signup" element={<SignUp/> }/>  {/* ���� הרשמה */}
-        <Route path="/login" element={<Login/> }/>
-        <Route path="/home" element={<Home/>} />
-        <Route path="/dataEntry" element={<DataEntry/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/dataEntry" element={<DataEntry />} />
       </Routes>
       <footer className="footer">
         <p>© 2025 כל הזכויות שמורות | <a href="https://yourwebsite.com">האתר שלנו</a></p>

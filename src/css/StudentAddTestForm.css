@@ -1,5 +1,3 @@
-
-/* Student Add Test Form Container */
 .student-add-test-form-container {
   background-color: #f0f8ff;
   width: 80%;
@@ -9,37 +7,35 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   animation: fadeInFromTop 0.6s forwards;
-  /* אפקט של הופעה מלמעלה */
+
   position: absolute;
-  /* תמנע מהטופס להזיז את האלמנטים האחרים */
 
 }
 
 
-/* Title */
+
 .student-add-test-form-title {
   text-align: center;
   font-size: 2rem;
   color: #003366;
-  /* Blue color */
+
   margin-bottom: 20px;
 }
 
-/* Student Add Test Loading Text */
 .student-add-test-loading-text {
   text-align: center;
   color: #ffcc00;
-  /* Yellow color */
+
 }
 
-/* Student Add Test Section Title */
+
 .student-add-test-section-title {
   font-size: 1.5rem;
   color: #003366;
   margin-bottom: 10px;
 }
 
-/* Student Add Test List */
+
 .student-add-test-list {
   list-style-type: none;
   padding-left: 0;
@@ -54,12 +50,11 @@
   margin-right: 10px;
 }
 
-/* Student Add Test Submit Button */
 .student-add-test-submit-button {
   background-color: #ffcc00;
-  /* Yellow color */
+
   color: #003366;
-  /* Blue color */
+
   font-size: 1.2rem;
   padding: 10px 20px;
   border: none;
@@ -77,11 +72,11 @@
 
 .student-add-test-submit-button:hover:not(:disabled) {
   background-color: #ffb300;
-  /* Slightly darker yellow */
+
 
 }
 
-/* Student Add Test Error Message */
+
 .student-add-test-error-message {
   color: red;
   font-size: 1rem;
@@ -89,7 +84,6 @@
   margin-top: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 600px) {
   .student-add-test-form-container {
     padding: 15px;

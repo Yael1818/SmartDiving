@@ -1,25 +1,24 @@
-/* DataEntry container */
+
 .data-entry-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-  
-  /* Styling for the header */
+
   .data-entry-header {
     margin-top: 180px;
 
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2rem; /* גודל הטקסט */
-    font-weight: bold; /* עושה את הטקסט בולט */
-    color: #4d3dfa; /* צבע צהוב כהה */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* הוספת צל לטקסט */
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #4d3dfa; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
   }
   
   
-  /* Wrapper for the circles */
+ 
   .data-entry-circle-container {
     display: flex;
     justify-content: space-between;
@@ -28,31 +27,28 @@
     margin-bottom: 30px;
   }
   
-  /* Individual circle styling with background image */
-  /* Individual circle styling with background image */
   .data-entry-circle {
-    width: 150px;  /* Increased size */
-    height: 150px;  /* Increased size */
+    width: 150px;  
+    height: 150px;  
     border-radius: 50%;
-    background-size: cover;  /* התמונה תכסה את כל העיגול */
-    background-position: center center;  /* ממקם את התמונה במרכז */
-    background-repeat: no-repeat;  /* מונע חזרה של התמונה */
-    overflow: hidden; /* מוודא שהתמונה לא תחרוג מהעיגול */
+    background-size: cover;  
+    background-position: center center;  
+    background-repeat: no-repeat;  
+    overflow: hidden; 
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transition for smooth effect */
+    transition: transform 0.3s ease, filter 0.3s ease; 
   }
 
-/* Hover effect to enlarge and brighten the circle */
+
 .data-entry-circle:hover {
-  transform: scale(1.1); /* Increase size */
-  filter: brightness(1.2); /* Make image brighter */
+  transform: scale(1.1); 
+  filter: brightness(1.2); 
 }
 
-  /* Button styling */
   .data-entry-button {
     background-color: #4CAF50;
     color: white;
@@ -61,14 +57,14 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 15px;  /* Margin to separate button from previous content */
+    margin-top: 15px; 
   }
   
   .data-entry-button:hover {
     background-color: #45a049;
   }
   
-  /* Styling for the test groups */
+  
   .data-entry-test-group-container {
     margin-top: 20px;
     text-align: center;
@@ -83,7 +79,7 @@
     margin: 5px 0;
   }
   
-  /* Styling for AddTestForm and AddStudentForm */
+ 
   .data-entry-form {
     margin-top: 20px;
     display: flex;
@@ -91,4 +87,4 @@
     align-items: center;
     gap: 15px;
   }
-  /* הוספת position: absolute לקומפוננטות ה-Form */
+  

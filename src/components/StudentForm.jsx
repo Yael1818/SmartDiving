@@ -9,7 +9,7 @@ const AddStudentForm = ({ userId }) => {
   const [tz, setTz] = useState("");
   const [showTestForm, setShowTestForm] = useState(false);
   const [showSubmitButton, setShowSubmitButton] = useState(true);
-  const [showForm, setShowForm] = useState(true); // מצב לשליטה בהצגת כל הקומפוננטה
+  const [showForm, setShowForm] = useState(true);
   const dispatch = useDispatch();
   const { student, isLoading, error } = useSelector((state) => state.student);
 
@@ -24,19 +24,19 @@ const AddStudentForm = ({ userId }) => {
       await dispatch(addStudent({ userId, name, tz }));
       dispatch(fetchStudentByTz(tz));
 
-      setShowTestForm(true); 
-      setShowSubmitButton(false); // העלמת הכפתור בלבד
+      setShowTestForm(true);
+      setShowSubmitButton(false);
     } catch (error) {
       console.error("Failed to add student:", error);
     }
   };
 
   const handleConfirm = () => {
-    setShowForm(false); // העלמת כל הקומפוננטה
+    setShowForm(false);
   };
 
   return (
-    showForm && ( // רק אם showForm true, הקומפוננטה תוצג
+    showForm && (
       <div className="add-student-container">
         <form onSubmit={handleSubmit} className="student-test-form">
           <div className="student-name-div">
@@ -59,7 +59,7 @@ const AddStudentForm = ({ userId }) => {
               placeholder="Enter student's TZ"
             />
           </div>{showSubmitButton && (
-          
+
             <button className="student-submit-btn" type="submit" disabled={isLoading}>
               {isLoading ? "Adding..." : "Add Student"}
             </button>
@@ -70,7 +70,7 @@ const AddStudentForm = ({ userId }) => {
           <StudentAddTestForm
             studentId={student?.id}
             userId={userId}
-            onClose={handleConfirm} // סגירת כל הקומפוננטה
+            onClose={handleConfirm}
           />
         )}
 

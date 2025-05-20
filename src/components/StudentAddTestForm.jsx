@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTestsByUserId, addTestToStudent } from "../redux/slice/TestSlice";
-import "../css/StudentAddTestForm.css"; // Assuming the CSS is in the same folder
+import "../css/StudentAddTestForm.css";
 
 const StudentAddTestForm = ({ studentId, userId, onClose }) => {
   const [selectedTests, setSelectedTests] = useState([]);
@@ -27,7 +27,7 @@ const StudentAddTestForm = ({ studentId, userId, onClose }) => {
     selectedTests.forEach((testId) => {
       dispatch(addTestToStudent({ studentId, testId }));
     });
-    onClose(); // Close the form after submission
+    onClose();
   };
 
   const testArray = tests?.$values || [];

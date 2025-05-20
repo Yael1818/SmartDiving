@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser } from "../redux/slice/authSlice";
-import { useNavigate } from "react-router-dom"; // לשימוש בניווט
+import { useNavigate } from "react-router-dom";
 import '../css/Login.css'
 const Login = () => {
   const dispatch = useDispatch();
@@ -14,12 +14,12 @@ const Login = () => {
     e.preventDefault();
     dispatch(loginUser({ email, password })).then((result) => {
       if (result.meta.requestStatus === "fulfilled") {
-        navigate("/home"); // מעבר לדף הבית אם ההתחברות הצליחה
+        navigate("/home");
       }
     });
   };
 
-  
+
   return (
     <div className="login-container">
       <div className="login-box">

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { UserAddTest } from '../redux/slice/TestSlice';
-import '../css/UserAddTestForm.css'; // יש להוסיף קובץ CSS חדש
+import '../css/UserAddTestForm.css';
 
-const UserAddTestForm = ({ userId ,onClose }) => {
+const UserAddTestForm = ({ userId, onClose }) => {
   const [subject, setSubject] = useState('');
   const dispatch = useDispatch();
   const { isLoading, error, message } = useSelector((state) => state.test);
@@ -15,9 +15,9 @@ const UserAddTestForm = ({ userId ,onClose }) => {
       return;
     }
 
-    // שליחת הנתונים ל-RRedux
+
     dispatch(UserAddTest({ userId, subject }));
-    setSubject('');  // מנקים את השדה לאחר שליחה
+    setSubject('');
     onClose();
   };
 
@@ -39,7 +39,7 @@ const UserAddTestForm = ({ userId ,onClose }) => {
         </button>
       </form>
 
-     
+
       {error && <div className="user-test-error">{error}</div>}
     </div>
   );
